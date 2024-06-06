@@ -1,0 +1,8 @@
+Considerando que existe um arquivo de texto em que cada número de identificação esteja de forma não ordenada e separado por espaço:
+  1- pegue o número de notas fiscais fornecidas e crie um vetor com o mesmo número de casas;
+  2- organize de forma crescente os números de identificação de acordo com a coordenada da casa, deixando as respectivas coordenadas ausentes caso não tenha o número da nota fiscal;
+  3- Criar outro vetor com N número de casas, mas completamente preenchidas;
+  4- Criar um pequeno loop, (enquanto houver casa seguinte no vetor):
+    4.1- if( o valor entre as mesmas coordenadas em ambos vetores for igual): Cheque a próxima casa;
+    4.2- else( se o valor for diferente): se a casa vazia aparecer na comparação o valor que deveria estar na casa é alojado em uma variável "output", usando como referência o vetor completo e o valor alojado nele;
+  5- Printf: (%& output "output = %&);
