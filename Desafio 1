@@ -1,11 +1,9 @@
 Considerando que os ceps descritos estão organizados em uma coluna de uma planilha, e cada coluna vizinha tem os dados a serem validados e alterados:
   1- É criado um Loop:
     1.1- se (célula está preenchida) execute:
-      1.1.1- é armazenado o valor do CEP em um vetor;
-      1.1.2- alojado cada número em uma unidade do vetor para que se descarte qualquer outro caractere que não seja um número;
-      1.1.3- é transferido esse Vetor CEP formatado para uma variável;
-      1.1.4- a variável é copiada e inserida dentro do texto de URL: viacep.com.br/ws/(%& variável vetor)/xml/;
-      1.1.5- na página gerada é feito um loop novo, (enquanto houver linhas do texto da api, faça): Copie o valor do dado retornado por XML e cole na planilha na coluna correta;
-      1.1.6- chegue a linha seguinte no excel;
+      1.1.1- é transferido esse Vetor CEP formatado para uma variável;
+      1.1.2- a variável é copiada e inserida dentro do texto de URL: viacep.com.br/ws/(%& variável vetor)/xml/;
+      1.1.3- na página gerada é feito um loop novo, (enquanto houver linhas do texto da api, faça): if(tiver valor na respectiva linha da api): retorne o dado da api copiando e colando na célula do excel/ else() retorne ("indisponível") na célula correspondente do excel;
+      1.1.4- chegue a linha seguinte no excel;
     1.2- Se a célula não estiver preenchida, encerre o loop;
     
