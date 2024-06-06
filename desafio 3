@@ -1,0 +1,11 @@
+No input é dado o número de valores e os valores. Dentro do VBA será feito:
+  1- organizar os valores em linhas dentro de uma coluna
+  2- declare variável contador.
+  3- criar um pequeno if e um else:
+    3.1- se o valor da unidade seguinte for igual ao valor da unidade atual é criado um pequeno loop que vai adicionando ao contador e descendo uma linha sempre que o valor da unidade seguinte for igual ao valor da célula atual.
+    3.2- se o valor for diferente, é criada outra variável "contador" e retornada ao comando 3 do código, iniciando outro loop que conta a quantidade de variáveis até não ter mais variável semelhante na linha seguinte.
+  4- Os contadores gerados são dispostos de forma decrescente em uma coluna oculta
+  5- é criado um conjunto de 3 células que servirão de modelo para saída da automação: n do contador / "medições de: " / o valor da medição correspondente aquele loop
+  6- essas 3 células serão exportadas em formato de arquivo .txt e salvas em uma pasta designada pelo excel
+
+  // dentro do input inicial é dado o volume de valores, então essa lógica também pode ser usada em linguagens de programação orientadas a objeto, usando a lógica de vetores/array para armazenar os valores e validar cada unidade em referência com as vizinhas.
